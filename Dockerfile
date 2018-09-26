@@ -7,7 +7,7 @@ RUN ln -sf /bin/true /sbin/initctl
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get -y update && apt-get install -y python
+RUN apt-get update && apt-get install -y python
 
 
 ADD index.py /index.py
